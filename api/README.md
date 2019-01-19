@@ -1,2 +1,1 @@
-# This is the API for the app
-it's reallllly cool
+# this is the api it's real cool ;-;
