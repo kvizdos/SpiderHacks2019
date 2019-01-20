@@ -21,6 +21,9 @@ import {MatIconModule} from '@angular/material/icon';
 
 import {MatInputModule} from '@angular/material/input';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 const routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
@@ -34,7 +37,7 @@ const routes = [
     HomeComponent,
     LoginComponent,
     GoalsComponent,
-    StockComponent
+    StockComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ const routes = [
     MatInputModule,
     MatCardModule,
     MatProgressBarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

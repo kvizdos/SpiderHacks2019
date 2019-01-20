@@ -1,0 +1,96 @@
+$darkpurple: rgb(136, 25, 180);
+$lightpurple: #8819b4;
+
+#stockHolder {
+    #stock {
+        margin: 10px;
+        border: 1px solid $lightpurple;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        p {
+            padding: 5px;
+        }
+        #stockImage {
+            margin: 5px;
+        }
+        #stockName {
+            float: left;
+        }
+        #stockSymbol {
+            float: left;
+            color: gray;
+        }
+
+        #stockPrice {
+            float: right;
+        }
+
+        .red {
+            color: rgb(223, 55, 55);
+        }
+        .green {
+            color: rgb(51, 175, 51);
+        }
+    }
+
+    #stockdata {
+        display: inline-block;
+        border: 1px solid $lightpurple;
+        width: 89%;
+        margin: 10px;
+        position: relative;
+        margin-top: -10.5px;
+        padding: 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        &:last-child {
+            margin-bottom: 50px;
+        }
+
+        #stockDataHeader {
+            font-size: 8pt;
+            .stockDataSideBySide {
+                float: left;
+                margin-left: 17%;
+                font-size: 14pt;
+            }
+            .stockDataSideBySideLabel {
+                float: left;
+                margin-left: 15%;
+                font-size: 14pt; 
+            }
+        }
+    }
+}
+
+#createStock {
+    margin-top: 10px;
+    margin: 10px;
+    width: 94%;
+    display: inline-block;
+    border: 2px solid $darkpurple;   
+    input {
+        border: 2px;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 4px;
+        margin: 0;
+        color: white;
+        background-color: $lightpurple;
+        width: 77px;
+    }
+}
+/*
+button {
+    text-align: center;
+    background-color: #8819b4;
+    border: 2px solid #8819b4;
+    width: 95%;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+*/

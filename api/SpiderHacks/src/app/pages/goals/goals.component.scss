@@ -5,13 +5,26 @@ button {
 #section1 {
     background-image: url('../../../assets/graph.svg');
     background-size: contain;
-    background-repeat: no-repeat;
     height: 250px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
 
+#create {
+    display: initial;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    mat-form-field {
+        width: 93%;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    button {
+        margin-bottom: 100px;
+    }
 }
 
 #section1 h1 {
@@ -55,4 +68,8 @@ button {
         padding: 10px;
         max-height: 200px;
     }
+}
+
+.mat-form-field-infix {
+    margin: 0;
 }

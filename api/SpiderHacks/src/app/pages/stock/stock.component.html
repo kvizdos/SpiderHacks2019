@@ -1,4 +1,30 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  graphiboi page
+<div id="createStock">
+  <input placeholder="Symbol" #newsym />
+  <button (click)="addStock(newsym.value.toLowerCase())"><i class="fas fa-plus"></i></button>
 </div>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="stockHolder" *ngFor="let stock of stocks">
+  <div id="stock">
+    <p id="stockName">{{stock.name}}</p> <p id="stockSymbol">{{stock.symbol | uppercase}}</p>
+    <p id="stockPrice" class="red">${{stock.price}}</p>
+    <img src="{{stock.logo}}" width="25px" id="stockImage" />
+
+  </div>
+  <div id="stockdata">
+
+    <div id="stockDataHeader">
+      <p class="stockDataSideBySideLabel" id="stockDataLow">LOW</p>
+      <p class="stockDataSideBySideLabel" id="stockDataAvg">AVG</p>
+      <p class="stockDataSideBySideLabel" id="stockDataHigh">HIGH</p>
+    </div>
+    <div id="stockDataHeader">
+      <p class="stockDataSideBySide" id="stockDataLow">{{stock.daily.low}}</p>
+      <p class="stockDataSideBySide" id="stockDataAvg">{{stock.daily.avg}}</p>
+      <p class="stockDataSideBySide" id="stockDataHigh">{{stock.daily.high}}</p>
+    </div>
+    <div id="stockDataContent">
+    </div>
+  </div>
+</div>
+<!--<button id="addStock" (click)="addStock()">Add Stock</button>-->

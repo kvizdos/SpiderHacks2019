@@ -4,7 +4,8 @@
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 
-
+$darkpurple: rgb(136, 25, 180);
+$lightpurple: #8819b4;
 * {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
