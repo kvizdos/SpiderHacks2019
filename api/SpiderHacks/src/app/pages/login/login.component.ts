@@ -19,9 +19,13 @@ export class LoginComponent {
   correctPw = true;
 
   login(username, password) {
+    if(username == undefined || password == undefined) {
+      this.correctPw = false;
+      return;
+    }
     if(username == "bfunk" && password == "password") {
-      alert("GOOD!");
-      this.correctPw = true;
+      localStorage.setItem("username", username);
+      window.location.pathname = '/goals';      this.correctPw = true;
     } else {
       this.correctPw = false;
     }

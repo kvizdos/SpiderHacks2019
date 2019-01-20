@@ -4,3 +4,11 @@
 <div id="content">
   <router-outlet></router-outlet>
 </div>
+
+<div id="navbar">
+    <a href="/stock"><i class="fas fa-chart-area" id="checkStocksBtn"></i></a>
+    <p id="createGoalBackground">&nbsp;</p>
+    <i class="fas fa-plus" id="createGoal" *ngIf="!showHomeOrPlus"></i>
+    <a href="/goals"><i class="fas fa-home" id="createGoal" *ngIf="showHomeOrPlus"></i></a>
+    <i class="fas fa-cog" id="settingBtn"></i>
+</div>

@@ -1,15 +1,15 @@
 <div style="text-align:center" id="vertCenter">
-  <p color="red">Incorrect username / password!</p>
+  <p id="incorrectDetails" *ngIf="!correctPw">Incorrect username / password!</p>
   <mat-form-field floatLabel="never">
     <input matInput placeholder="Username" #firstName>
   </mat-form-field>
   <br>
   <mat-form-field  floatLabel="never">
-    <input matInput placeholder="Password" #passwords>
+    <input type="password" matInput placeholder="Password" #password>
   </mat-form-field>
 
   <br>
   
-  <button mat-flat-button color="primary">Login</button>
+  <button mat-flat-button color="primary" (click)="login(firstName.value, password.value)">Login</button>
 
 </div>

@@ -15,5 +15,6 @@ import {
 
 export class AppComponent {
   title = window.location.pathname.substr(1).toUpperCase();
-  showHeader = this.title.length > 0 ? true : false;
+  showHeader = this.title.length > 0 ? this.title !== "GOALS" ? true : false : false;
+  showHomeOrPlus = this.title.length > 0 ? this.title !== "GOALS" ? true : false : false;
 }
